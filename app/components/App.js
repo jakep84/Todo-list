@@ -18,19 +18,16 @@ var App = React.createClass({
   },
   render() {
     var renderMainView = () => {
-      if (this.props.user_id) {
-        return
-      }
-    }
     if(this.props.user_id) {
       return (
       <Main />
       );
     } else {
-    return (
-    <Login />
-    );
-  };
+      return (
+        <Login />
+      );
+    }
+  }
 
     return (
       <View style={{flex:1}}>

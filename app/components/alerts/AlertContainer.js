@@ -12,11 +12,11 @@ var AlertContainer = React.createClass({
   render() {
     var renderAlerts = () => {
       return this.props.alerts.map((alert) => {
-      return (
-        <Alert alert={alert} key={alert.id}/>
-      )
-    });
-  }
+        return (
+          <Alert alert={alert} key={alert.id}/>
+        )
+      });
+    }
     return (
     <View style={styles.container}>
       {renderAlerts()}
