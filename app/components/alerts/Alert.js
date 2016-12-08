@@ -16,9 +16,9 @@ var Alert = React.createClass({
   },
   render() {
   return (
-    <TouchableWithoutFeedback>
+    <TouchableWithoutFeedback onPress={this.onRemoveAlert}>
       <View style={styles.container}>
-        <Text style={styles.text} onPress={this.onRemoveAlert}>
+        <Text style={styles.text}>
         {this.props.alert.text}
         </Text>
       </View>

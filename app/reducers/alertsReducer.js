@@ -1,6 +1,6 @@
 import uuid from 'uuid';
 
-var defaultState = []
+var defaultState = [];
 
 module.exports = (state=defaultState, action) => {
 switch(action.type) {

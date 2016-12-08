@@ -28,7 +28,7 @@ var AlertContainer = React.createClass({
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+  flex: 1,
   position: 'absolute',
   bottom:0,
   left:0,
