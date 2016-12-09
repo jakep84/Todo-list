@@ -12,7 +12,7 @@ import {loginUser, signupUser, addAlert} from '../actions';
 
 var Login = React.createClass({
   onSignIn: function(){
-    var {dispatch, fields: {email, password}} = this.props
+    var {dispatch, fields: {email, password}} = this.props;
     dispatch(loginUser(email.value, password.value));
   },
   onSignUp: function(){
@@ -56,12 +56,12 @@ var Login = React.createClass({
               </View>
             </View>
             <View style={styles.buttonContainer}>
-              <TouchableOpacity onPress={this.signin}>
+              <TouchableOpacity onPress={this.onSignIn}>
                 <Text style={styles.button}>
                   Sign In
                 </Text>
               </TouchableOpacity>
-              <TouchableOpacity onPress={this.signup}>
+              <TouchableOpacity onPress={this.onSignUp}>
                 <Text style={styles.button}>
                   Sign Up
                 </Text>
